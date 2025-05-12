@@ -32,6 +32,7 @@
 	],
 	"homepage": "it.rocks",
 	"keywords": [
+		"backend",
 		"i18n",
 		"internationalization",
 		"it.rocks",
@@ -50,5 +51,5 @@
 		"test": "jest"
 	},
 	"types": "./esm/template-insight.d.ts",
-	"version": "0.0.1"
+	"version": "0.0.2"
 }
