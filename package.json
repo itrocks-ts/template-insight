@@ -1,0 +1,54 @@
+{
+	"author": {
+		"name": "Baptiste Pillot",
+		"email": "baptiste@pillot.fr"
+	},
+	"dependencies": {
+		"@itrocks/class-type": "latest",
+		"@itrocks/class-view": "latest",
+		"@itrocks/property-view": "latest",
+		"@itrocks/reflect": "latest",
+		"@itrocks/rename": "latest",
+		"@itrocks/route": "latest",
+		"@itrocks/template": "latest",
+		"@itrocks/translate": "latest"
+	},
+	"description": "Extends @itrocks/template: parses view-related decorators, uses reflection, translates",
+	"devDependencies": {
+		"typescript": "~5.6"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"exports": {
+		"import": "./esm/template-insight.js",
+		"require": "./cjs/template-insight.js"
+	},
+	"files": [
+		"LICENSE",
+		"README.md",
+		"*/*.d.ts",
+		"*/*.js"
+	],
+	"homepage": "it.rocks",
+	"keywords": [
+		"i18n",
+		"internationalization",
+		"it.rocks",
+		"template"
+	],
+	"license": "ISC",
+	"name": "@itrocks/template-insight",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/itrocks-ts/template-insight.git"
+	},
+	"scripts": {
+		"build": "npm run build:cjs && npm run build:esm",
+		"build:cjs": "tsc -p tsconfig.cjs.json",
+		"build:esm": "tsc -p tsconfig.esm.json",
+		"test": "jest"
+	},
+	"types": "./esm/template-insight.d.ts",
+	"version": "0.0.1"
+}
