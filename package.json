@@ -15,7 +15,7 @@
 	},
 	"description": "Extends @itrocks/template: parses view-related decorators, uses reflection, translates",
 	"devDependencies": {
-		"typescript": "~5.6"
+		"typescript": "~5.8"
 	},
 	"engines": {
 		"node": ">=18"
@@ -51,5 +51,5 @@
 		"test": "jest"
 	},
 	"types": "./esm/template-insight.d.ts",
-	"version": "0.0.2"
+	"version": "0.0.3"
 }
