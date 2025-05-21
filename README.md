@@ -6,4 +6,4 @@
 
 # template-insight
 
-Extends @itrocks/template: parses view-related decorators, uses reflection, translates
+Extends @itrocks/template with decorator parsing, reflection, and translation features.
