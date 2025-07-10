@@ -15,6 +15,10 @@
 	},
 	"description": "Extends @itrocks/template with decorator parsing, reflection, and translation features",
 	"devDependencies": {
+		"@types/jest": "^30.0",
+		"@types/node": "^24.0",
+		"jest": "^30.0",
+		"ts-jest": "^29.4",
 		"typescript": "~5.8"
 	},
 	"engines": {
@@ -31,6 +35,13 @@
 		"*/*.js"
 	],
 	"homepage": "it.rocks",
+	"jest": {
+		"preset": "ts-jest",
+		"testEnvironment": "node",
+		"testMatch": [
+			"**/?(*.)+(spec|test).ts"
+		]
+	},
 	"keywords": [
 		"backend",
 		"i18n",
@@ -48,8 +59,8 @@
 		"build": "npm run build:cjs && npm run build:esm",
 		"build:cjs": "tsc -p tsconfig.cjs.json",
 		"build:esm": "tsc -p tsconfig.esm.json",
-		"test": "jest"
+		"test": "test/test"
 	},
 	"types": "./esm/template-insight.d.ts",
-	"version": "0.0.4"
+	"version": "0.0.5"
 }
