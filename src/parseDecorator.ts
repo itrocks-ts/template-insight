@@ -8,7 +8,7 @@ import { Str }                            from '@itrocks/rename'
 import { routeOf }                        from '@itrocks/route'
 import { tr }                             from '@itrocks/translate'
 
-export function parseDecorator(variable: string, data: any)
+export async function parseDecorator(variable: string, data: any)
 {
 	if ((typeof data !== 'function') && (typeof data !== 'object')) {
 		console.error('Bad data for variable', variable, 'data', data)
@@ -20,7 +20,7 @@ export function parseDecorator(variable: string, data: any)
 			if (typeof data === 'object')        return classDisplayOf(data)
 			return data
 		case '@output':
-			return new Str(trOutputOf(data))
+			return new Str(await trOutputOf(data))
 		case '@route':
 			return routeOf(data)
 		case '@typeRoute':
