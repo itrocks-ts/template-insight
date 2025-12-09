@@ -16,10 +16,10 @@
 	"description": "Extends @itrocks/template with decorator parsing, reflection, and translation features",
 	"devDependencies": {
 		"@types/jest": "^30.0",
-		"@types/node": "^24.0",
-		"jest": "^30.0",
+		"@types/node": "^24.10",
+		"jest": "^30.2",
 		"ts-jest": "^29.4",
-		"typescript": "~5.8"
+		"typescript": "~5.9"
 	},
 	"engines": {
 		"node": ">=18"
@@ -62,5 +62,5 @@
 		"test": "test/test"
 	},
 	"types": "./esm/template-insight.d.ts",
-	"version": "0.1.0"
+	"version": "0.1.1"
 }
