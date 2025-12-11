@@ -44,10 +44,20 @@
 	},
 	"keywords": [
 		"backend",
+		"decorate",
+		"decorator",
+		"display",
 		"i18n",
 		"internationalization",
 		"it.rocks",
-		"template"
+		"output",
+		"reflect",
+		"reflection",
+		"route",
+		"routing",
+		"template",
+		"translate",
+		"translation"
 	],
 	"license": "ISC",
 	"name": "@itrocks/template-insight",
@@ -62,5 +72,5 @@
 		"test": "test/test"
 	},
 	"types": "./esm/template-insight.d.ts",
-	"version": "0.1.1"
+	"version": "0.1.2"
 }
