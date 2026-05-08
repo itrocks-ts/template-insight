@@ -19,20 +19,17 @@
 		"@types/node": "^24.10",
 		"jest": "^30.2",
 		"ts-jest": "^29.4",
-		"typescript": "~5.9"
+		"typescript": "^6.0"
 	},
 	"engines": {
-		"node": ">=18"
+		"node": ">=24"
 	},
-	"exports": {
-		"import": "./esm/template-insight.js",
-		"require": "./cjs/template-insight.js"
-	},
+	"exports": "./cjs/template-insight.js",
 	"files": [
 		"LICENSE",
 		"README.md",
-		"*/*.d.ts",
-		"*/*.js"
+		"cjs",
+		"!*.map"
 	],
 	"homepage": "it.rocks",
 	"jest": {
@@ -66,11 +63,8 @@
 		"url": "git+https://github.com/itrocks-ts/template-insight.git"
 	},
 	"scripts": {
-		"build": "npm run build:cjs && npm run build:esm",
-		"build:cjs": "tsc -p tsconfig.cjs.json",
-		"build:esm": "tsc -p tsconfig.esm.json",
+		"build": "tsc",
 		"test": "test/test"
 	},
-	"types": "./esm/template-insight.d.ts",
-	"version": "0.1.2"
+	"version": "0.1.3"
 }
